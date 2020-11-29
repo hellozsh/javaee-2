@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="WEB-INF" basedir=".">
+ 
+<target name="compile"> 
+   <javac srcdir="src/zhou" destdir="classes/zhou" />
+</target>
+
+<target name="person" depends="compile">
+<java classname="Person">
+<classpath>
+<pathelement path="classes"/>
+</classpath>
+</java>
+</target>
+
+</project>
